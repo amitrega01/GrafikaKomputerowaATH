@@ -1,0 +1,18 @@
+﻿  Zadanie 3.cpp
+LINK : warning LNK4075: zignorowano opcję „/INCREMENTAL” z powodu określenia opcji „/FORCE”
+Zadanie 3.obj : warning LNK4006: element "void __cdecl gltAddVectors(float const * const,float const * const,float * const)" (?gltAddVectors@@YAXQBM0QAM@Z) jest już zdefiniowany w elemencie VectorMath.obj; druga definicja została zignorowana
+Zadanie 3.obj : warning LNK4006: element "void __cdecl gltCopyVector(float const * const,float * const)" (?gltCopyVector@@YAXQBMQAM@Z) jest już zdefiniowany w elemencie VectorMath.obj; druga definicja została zignorowana
+Zadanie 3.obj : warning LNK4006: element "float __cdecl gltDistanceToPlane(float * const,float * const)" (?gltDistanceToPlane@@YAMQAM0@Z) jest już zdefiniowany w elemencie VectorMath.obj; druga definicja została zignorowana
+Zadanie 3.obj : warning LNK4006: element "void __cdecl gltGetNormalVector(float const * const,float const * const,float const * const,float * const)" (?gltGetNormalVector@@YAXQBM00QAM@Z) jest już zdefiniowany w elemencie VectorMath.obj; druga definicja została zignorowana
+Zadanie 3.obj : warning LNK4006: element "void __cdecl gltGetPlaneEquation(float * const,float * const,float * const,float * const)" (?gltGetPlaneEquation@@YAXQAM000@Z) jest już zdefiniowany w elemencie VectorMath.obj; druga definicja została zignorowana
+Zadanie 3.obj : warning LNK4006: element "float __cdecl gltGetVectorLength(float const * const)" (?gltGetVectorLength@@YAMQBM@Z) jest już zdefiniowany w elemencie VectorMath.obj; druga definicja została zignorowana
+Zadanie 3.obj : warning LNK4006: element "float __cdecl gltGetVectorLengthSqrd(float const * const)" (?gltGetVectorLengthSqrd@@YAMQBM@Z) jest już zdefiniowany w elemencie VectorMath.obj; druga definicja została zignorowana
+Zadanie 3.obj : warning LNK4006: element "void __cdecl gltNormalizeVector(float * const)" (?gltNormalizeVector@@YAXQAM@Z) jest już zdefiniowany w elemencie VectorMath.obj; druga definicja została zignorowana
+Zadanie 3.obj : warning LNK4006: element "void __cdecl gltRotateVector(float const * const,float const * const,float * const)" (?gltRotateVector@@YAXQBM0QAM@Z) jest już zdefiniowany w elemencie VectorMath.obj; druga definicja została zignorowana
+Zadanie 3.obj : warning LNK4006: element "void __cdecl gltScaleVector(float * const,float)" (?gltScaleVector@@YAXQAMM@Z) jest już zdefiniowany w elemencie VectorMath.obj; druga definicja została zignorowana
+Zadanie 3.obj : warning LNK4006: element "void __cdecl gltSubtractVectors(float const * const,float const * const,float * const)" (?gltSubtractVectors@@YAXQBM0QAM@Z) jest już zdefiniowany w elemencie VectorMath.obj; druga definicja została zignorowana
+Zadanie 3.obj : warning LNK4006: element "void __cdecl gltTransformPoint(float const * const,float const * const,float * const)" (?gltTransformPoint@@YAXQBM0QAM@Z) jest już zdefiniowany w elemencie VectorMath.obj; druga definicja została zignorowana
+Zadanie 3.obj : warning LNK4006: element "void __cdecl gltVectorCrossProduct(float const * const,float const * const,float * const)" (?gltVectorCrossProduct@@YAXQBM0QAM@Z) jest już zdefiniowany w elemencie VectorMath.obj; druga definicja została zignorowana
+Zadanie 3.obj : warning LNK4006: element "float __cdecl gltVectorDotProduct(float const * const,float const * const)" (?gltVectorDotProduct@@YAMQBM0@Z) jest już zdefiniowany w elemencie VectorMath.obj; druga definicja została zignorowana
+C:\Users\amitr\Desktop\grafika-sprawozdanie-2\Sprawozdanie 2\Debug\Zadanie 3.exe : warning LNK4088: obraz jest generowany ze względu na użycie opcji /FORCE; uruchomienie obrazu może nie być możliwe
+  Zadanie 3.vcxproj -> C:\Users\amitr\Desktop\grafika-sprawozdanie-2\Sprawozdanie 2\Debug\Zadanie 3.exe

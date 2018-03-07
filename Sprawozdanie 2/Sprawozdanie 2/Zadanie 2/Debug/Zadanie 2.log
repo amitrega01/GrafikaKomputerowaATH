@@ -1,0 +1,7 @@
+﻿  stdafx.cpp
+  Zadanie 2.cpp
+c:\users\amitr\desktop\grafika-sprawozdanie-2\sprawozdanie 2\zadanie 2\zadanie 2.cpp(74): warning C4244: "=": konwersja z "double" do "GLfloat", możliwa utrata danych
+c:\users\amitr\desktop\grafika-sprawozdanie-2\sprawozdanie 2\zadanie 2\zadanie 2.cpp(75): warning C4244: "=": konwersja z "double" do "GLfloat", możliwa utrata danych
+c:\users\amitr\desktop\grafika-sprawozdanie-2\sprawozdanie 2\zadanie 2\zadanie 2.cpp(95): warning C4244: "=": konwersja z "double" do "GLfloat", możliwa utrata danych
+c:\users\amitr\desktop\grafika-sprawozdanie-2\sprawozdanie 2\zadanie 2\zadanie 2.cpp(96): warning C4244: "=": konwersja z "double" do "GLfloat", możliwa utrata danych
+  Zadanie 2.vcxproj -> C:\Users\amitr\Desktop\grafika-sprawozdanie-2\Sprawozdanie 2\Debug\Zadanie 2.exe
