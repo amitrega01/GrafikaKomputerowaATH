@@ -1,8 +1,0 @@
-﻿  Zadanie2.cpp
-c:\users\amitr\desktop\sprawozdanie 3\zadanie2\zadanie2.cpp(461): warning C4305: "+=": obcięcie z "double" do "GLfloat"
-c:\users\amitr\desktop\sprawozdanie 3\zadanie2\zadanie2.cpp(466): warning C4305: "-=": obcięcie z "double" do "GLfloat"
-c:\users\amitr\desktop\sprawozdanie 3\zadanie2\zadanie2.cpp(518): warning C4305: "argument": obcięcie z "double" do "GLfloat"
-c:\users\amitr\desktop\sprawozdanie 3\zadanie2\zadanie2.cpp(520): warning C4305: "argument": obcięcie z "double" do "GLfloat"
-c:\users\amitr\desktop\sprawozdanie 3\zadanie2\zadanie2.cpp(522): warning C4305: "argument": obcięcie z "double" do "GLfloat"
-c:\users\amitr\desktop\sprawozdanie 3\zadanie2\zadanie2.cpp(524): warning C4305: "argument": obcięcie z "double" do "GLfloat"
-  Zadanie2.vcxproj -> C:\Users\amitr\Desktop\Sprawozdanie 3\Sprawozdanie 3\Debug\Zadanie2.exe
