@@ -12,6 +12,7 @@ JanuszG@enter.net.pl
 
 enum
 {
+	SOLID,
 	FULL_WINDOW,       // aspekt obrazu - całe okno
 	ASPECT_1_1,        // aspekt obrazu 1:1
 	EXIT               // wyjście
@@ -20,6 +21,9 @@ enum
 // aspekt obrazu
 
 int aspect = FULL_WINDOW;
+
+
+bool solid = false;
 
 // rozmiary bryły obcinania
 
@@ -61,73 +65,141 @@ const int n = 1;
 
 void stozek4x4() {
 
+	if (solid)
+	{
+		glutSolidCone(1.0, 1.0, m, n);
 
-	glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(1.0, 0.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
+		glTranslatef(1.0, 0.0, 0.0);
 
-	glTranslatef(1.0, 0.0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
-	glTranslatef(1.0, 0.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
+		glTranslatef(0.0, -1.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
+		glTranslatef(0.0, -1.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
+		glTranslatef(-1.0, 0.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
+		glTranslatef(0, 1.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
+		glTranslatef(-1.0, 0.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
+		glTranslatef(0, -1.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
+		glTranslatef(-1.0, 0.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
+		glTranslatef(0, 1.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
+		glTranslatef(0, 1.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
+		glTranslatef(0, 1.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
+		glTranslatef(1, 0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
 
-	glutWireCone(1.0, 1.0, m, n);
-	glTranslatef(0.0, -1.0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
-	glTranslatef(0.0, -1.0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
-	glTranslatef(-1.0, 0.0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
-	glTranslatef(0, 1.0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
-	glTranslatef(-1.0, 0.0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
-	glTranslatef(0, -1.0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
-	glTranslatef(-1.0, 0.0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
-	glTranslatef(0, 1.0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
-	glTranslatef(0, 1.0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
-	glTranslatef(0, 1.0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
-	glTranslatef(1, 0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(1, 0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
 
-	glTranslatef(1, 0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(1, 0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
+	}
+	else {
 
-	glTranslatef(1, 0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
+		glutWireCone(1.0, 1.0, m, n);
 
+		glTranslatef(1.0, 0.0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(1.0, 0.0, 0.0);
+
+		glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(0.0, -1.0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(0.0, -1.0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(-1.0, 0.0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(0, 1.0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(-1.0, 0.0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(0, -1.0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(-1.0, 0.0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(0, 1.0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(0, 1.0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(0, 1.0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(1, 0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+
+		glTranslatef(1, 0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+
+		glTranslatef(1, 0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+	}
 }
 
 void Stozek3x3() {
 
+	if (solid) {
+		glutSolidCone(1.0, 1.0, m, n);
 
-	glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(1.0, 0.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
 
-	glTranslatef(1.0, 0.0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(0.0, -1.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
 
-	glTranslatef(0.0, -1.0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(-1.0, 0.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
 
-	glTranslatef(-1.0, 0.0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(-1.0, 0.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
 
-	glTranslatef(-1.0, 0.0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(0.0, 1.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
 
-	glTranslatef(0.0, 1.0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(0.0, 1.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
 
-	glTranslatef(0.0, 1.0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(1.0, 0.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
 
-	glTranslatef(1.0, 0.0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(1.0, 0.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
+	
+	}
+	else {
+		glutWireCone(1.0, 1.0, m, n);
 
-	glTranslatef(1.0, 0.0, 0.0);
-	glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(1.0, 0.0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+
+		glTranslatef(0.0, -1.0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+
+		glTranslatef(-1.0, 0.0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+
+		glTranslatef(-1.0, 0.0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+
+		glTranslatef(0.0, 1.0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+
+		glTranslatef(0.0, 1.0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+
+		glTranslatef(1.0, 0.0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+
+		glTranslatef(1.0, 0.0, 0.0);
+		glutWireCone(1.0, 1.0, m, n);
+	}
 }
 
 
@@ -136,17 +208,30 @@ void Stozek3x3() {
 
 void Stozek2x2()
 {
+	if (solid) {
+		glutSolidCone(1.0, 1.0, m, n);
+		glTranslatef(1.0, 0.0, 0.0);
 
-	glutWireCone(1.0, 1.0, m, n);
-	glTranslatef(1.0, 0.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
+		glTranslatef(0.0, -1.0, 0.0);
 
-	glutWireCone(1.0, 1.0, m, n);
-	glTranslatef(0.0, -1.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
+		glTranslatef(-1.0, 0.0, 0.0);
 
-	glutWireCone(1.0, 1.0, m, n);
-	glTranslatef(-1.0, 0.0, 0.0);
+		glutSolidCone(1.0, 1.0, m, n);
+	}
+	else {
+		glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(1.0, 0.0, 0.0);
 
-	glutWireCone(1.0, 1.0, m, n);
+		glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(0.0, -1.0, 0.0);
+
+		glutWireCone(1.0, 1.0, m, n);
+		glTranslatef(-1.0, 0.0, 0.0);
+
+		glutWireCone(1.0, 1.0, m, n);
+	}
 }
 
 // funkcja rysująca piramidę z sześcianów
@@ -250,7 +335,16 @@ void Pyramid()
 	// szósty poziom 1x1
 	glPushMatrix();
 	glTranslatef(0.0, 0.0, 5.0);
-	glutWireCone(1.0, 1.0, m, n);
+
+	if (solid)
+	{
+		glutSolidCone(1.0, 1.0, m, n);
+	}
+	else {
+
+
+		glutWireCone(1.0, 1.0, m, n);
+	}
 	glPopMatrix();
 }
 
@@ -414,6 +508,10 @@ void Menu(int value)
 {
 	switch (value)
 	{
+	case SOLID:
+		solid = !solid;
+		Display();
+		break;
 		// obszar renderingu - całe okno
 	case FULL_WINDOW:
 		aspect = FULL_WINDOW;
@@ -467,8 +565,7 @@ int main(int argc, char *argv[])
 	// utworzenie podmenu - aspekt obrazu
 	int MenuAspect = glutCreateMenu(Menu);
 #ifdef WIN32
-
-	glutAddMenuEntry("Aspekt obrazu - całe okno", FULL_WINDOW);
+glutAddMenuEntry("Aspekt obrazu - całe okno", FULL_WINDOW);
 #else
 
 	glutAddMenuEntry("Aspekt obrazu - cale okno", FULL_WINDOW);
@@ -480,6 +577,7 @@ int main(int argc, char *argv[])
 	glutCreateMenu(Menu);
 	glutAddSubMenu("Aspekt obrazu", MenuAspect);
 #ifdef WIN32
+	glutAddMenuEntry("Typ: Solid/Wire", SOLID);
 
 	glutAddMenuEntry("Wyjście", EXIT);
 #else
