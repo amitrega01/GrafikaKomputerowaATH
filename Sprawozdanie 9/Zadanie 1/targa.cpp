@@ -1,14 +1,10 @@
-﻿/*
-(c) Janusz Ganczarski
-http://www.januszg.hg.pl
-JanuszG@enter.net.pl
-*/
+﻿#define _CRT_SECURE_NO_WARNINGS
 #include <Windows.h>
 #include "targa.h"
+#include "glext.h"
 #include <stdio.h>
 #include <string.h>
-#include "glext.h" 
-#pragma warning(disable : 4996)
+
 // stałe używane przy obsłudze plików TARGA:
 
 // rozmiar nagłówka pliku
@@ -20,7 +16,6 @@ JanuszG@enter.net.pl
 // nieskompresowany obraz w odcieniach szarości
 #define TARGA_UNCOMP_BW_IMG 0x03
 
-#define _CRT_SECURE_NO_WARNINGS true
 // odczyt pliku graficznego w formacie TARGA
 // filename - nazwa pliku
 // width - szerokość obrazu
@@ -174,4 +169,5 @@ GLboolean save_targa(const char *filename, GLsizei width, GLsizei height,
 	// sukces
 	return GL_TRUE;
 }
+
 
